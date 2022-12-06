@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(
-                    statusCode: Int
+                    statusCode: Int,
                     headers: Array<out Header>?,
                     throwable: Throwable?,
                     errorResponse: JSONObject?
