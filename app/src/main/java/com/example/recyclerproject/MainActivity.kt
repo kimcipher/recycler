@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         recyclerView.setHasFixedSize(true)
 
-        client.get(this, "", null, "application/json",
+        client.get(this, "https://ghostsec.pythonanywhere.com/products", null, "application/json",
             object: JsonHttpResponseHandler(){
                 override fun onSuccess(
                     statusCode: Int,
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(
-                    statusCode: Int,
+                    statusCode: Int
                     headers: Array<out Header>?,
                     throwable: Throwable?,
                     errorResponse: JSONObject?
