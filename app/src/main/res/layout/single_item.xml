@@ -12,7 +12,7 @@
 
 <!--        Image view-->
         <ImageView
-            android:id="@+id/product_image"
+            android:id="@+id/productImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/tech"
@@ -21,12 +21,12 @@
             />
 <!--        Product Name-->
         <TextView
-            android:id="@+id/product_name"
+            android:id="@+id/productName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_toEndOf="@id/product_image"
-            android:layout_toRightOf="@id/product_image"
+            android:layout_toEndOf="@id/productImage"
+            android:layout_toRightOf="@id/productImage"
             android:text="Web 3 Integration"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -35,13 +35,13 @@
 
 <!--        Product Description-->
         <TextView
-            android:id="@+id/product_description"
+            android:id="@+id/productDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/product_name"
+            android:layout_below="@id/productName"
             android:layout_marginTop="5dp"
-            android:layout_toEndOf="@id/product_image"
-            android:layout_toRightOf="@id/product_image"
+            android:layout_toEndOf="@id/productImage"
+            android:layout_toRightOf="@id/productImage"
             android:text="Incorporation of machine learning with web"
             android:layout_marginStart="10dp"
             android:textColor="#494646"
@@ -50,13 +50,13 @@
 
 <!--        Product More-->
         <TextView
-            android:id="@+id/product_learnMore"
+            android:id="@+id/productLearnMore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/product_description"
+            android:layout_below="@id/productDescription"
             android:layout_marginTop="3dp"
-            android:layout_toEndOf="@id/product_image"
-            android:layout_toRightOf="@id/product_image"
+            android:layout_toEndOf="@id/productImage"
+            android:layout_toRightOf="@id/productImage"
             android:text="Learn Programming"
             android:layout_marginStart="10dp"
             android:textColor="#2962FF"
@@ -67,7 +67,7 @@
             android:id="@+id/purchaseBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/product_learnMore"
+            android:layout_below="@id/productLearnMore"
             android:text="Purchase Now"
             android:textAllCaps="false"
             android:textSize="18sp"/>
