@@ -34,8 +34,8 @@ class RecyclerAdapter(var context: Context):
         //bind
         val item = productList[position]
         productName.text=item.productName
-        productLearnMore.text = item.productDescription
-        productDesc.text = item.productLearnMore
+        productLearnMore.text = item.productLearnMore
+        productDesc.text = item.productDescription
 
         //
         Glide.with(context).load(item.productImage)
@@ -44,11 +44,30 @@ class RecyclerAdapter(var context: Context):
 
 
 
-        // holder.itemView.setOnClickListener {
-        //
-        //
-        //
-        // }
+         holder.itemView.setOnClickListener {
+
+             // shared preferences -> temporary storage in an android application
+             /*
+                1. Facebook -> temporary storage for login credentials
+                2. Game levels
+                3. Sessions
+              */
+
+             val prefs:SharedPreferences = context.getSharedPreferences("productDB", Context.MODE_PRIVATE)
+             val editor:SharedPreferences.Editor = prefs.edit()
+
+             editor.putString("productName", item.productName)
+             editor.putString("productLearnMore", item.productLearnMore)
+             editor.putString("productDesc", item.productDescription)
+             editor.putString("image", item.productImage)
+
+             editor.apply()
+
+             val intent = Intent(context, SingleActivity::class.java)
+             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+             context.startActivity(intent)
+
+         }
     }
 
     override fun getItemCount(): Int { //count the number items coming from the API
