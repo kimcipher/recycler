@@ -54,6 +54,7 @@
                 android:text="ProductLearnMore"
                 android:layout_below="@id/image"
                 android:layout_marginTop="8dp"
+                android:layout_marginStart="130dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:padding="5dp"
@@ -64,8 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ProductDescription"
-                    android:layout_marginTop="360dp"
-                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="380dp"
+                    android:layout_marginStart="130dp"
                     android:textSize="15sp"
                     android:padding="5dp"
                     android:textColor="@color/black"/>
@@ -74,12 +75,12 @@
                 android:id="@+id/BtnSingle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buy Via Mpesa"
-                android:layout_marginTop="400dp"
-                android:layout_marginStart="140dp"
-                android:textAllCaps="false"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="500dp"
+                android:backgroundTint="#0E712A"
                 android:padding="15dp"
-                android:backgroundTint="#0E712A"/>
+                android:text="Buy Via M-pesa"
+                android:textAllCaps="false" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
