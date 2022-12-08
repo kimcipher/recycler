@@ -11,6 +11,7 @@
 
     <TextView
 
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SignUp Here"
@@ -21,6 +22,7 @@
         android:layout_marginTop="40dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -127,6 +129,13 @@
         android:background="@drawable/btn_rounded"
         android:text="SignUp"
         android:textSize="20sp"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:outlineAmbientShadowColor="@color/teal_700"
+        android:layout_marginTop="20dp"/>
 
 
 </LinearLayout>

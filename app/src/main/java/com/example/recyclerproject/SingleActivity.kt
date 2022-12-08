@@ -62,8 +62,14 @@ class SingleActivity : AppCompatActivity() {
                         headers: Array<out Header>?,
                         response: JSONObject?
                     ) {
-                        Toast.makeText(applicationContext, "Please Complete Payment$statusCode", Toast.LENGTH_LONG).show()
+                        if (statusCode == 200){
+                            Toast.makeText(applicationContext, "Please Complete Payment$statusCode", Toast.LENGTH_LONG).show()
 //                        super.onSuccess(statusCode, headers, response)
+                        }
+                        else {
+                            Toast.makeText(applicationContext, "Payment not successful$statusCode", Toast.LENGTH_LONG).show()
+                                            }
+
                     }
 
                     override fun onFailure(
